@@ -1,0 +1,28 @@
+# Chatbot
+
+### Web application for Sysaid that analyzing information from Qlik Sense SaaS object with the use of Chat GPT
+
+### Settings file
+./server/settings.js
+
+Example:
+```
+module.exports = {
+    //Qlik Saas Data
+    tenant: "qisrael.eu.qlikcloud.com",
+    apiKey: "eyJhbGciOiJFUzM4NCIsImtpZCI6IjRkZTg3MDYyLTk1ODEtNDI2ZC1iYzhlLWYwZjQ3MjZiOGQ3MyIsInR5cCI6IkpXVCJ9.eyJzdWJUeXBlIjoidXNlciIsInRlbmFudElkIjoicTR5dnREQnZwZkNhdHhZeUtYS2pOMGhGTFNMbW01VlQiLCJqdGkiOiI0ZGU4NzA2Mi05NTgxLTQyNmQtYmM4ZS1mMGY0NzI2YjhkNzMiLCJhdWQiOiJxbGlrLmFwaSIsImlzcyI6InFsaWsuYXBpL2FwaS1rZXlzIiwic3ViIjoib21PeUFoOEFibFhjNEZjVllGR0owXzRSU2RjSkZ6QTcifQ.wlEBZt359uTh0toBhb_g-2EOnwPpbK-0rnTRenGad6oe4s41D3bLKBRmFHVdKgXSHG6MrruzGsARM9tMB4Aa0GeDpoVyRXiQFqigiEAlkzvfB43va0IenFneYtS4BFnG",
+    appId: "81f5be0c-fd0a-43aa-ba54-73afcc934c75",
+    objID: "3b10f809-d4d6-4abf-b0d2-6b2c9ba0dc04",
+
+    //Chat GPT settings
+    apiKeyChatGpt: "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",
+    defaultRowNumber: 2
+};
+```
+### Installation and activation
+```
+cd server
+npm install
+
+node app.js
+```

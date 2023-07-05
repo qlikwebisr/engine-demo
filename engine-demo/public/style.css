@@ -1,0 +1,48 @@
+/* Main CSS file */
+header .logo{
+   text-align: right;
+}
+header .logo img{
+    max-width: 120px;
+    margin:10px 20px;
+}
+header .title{
+
+}
+header .title h1{
+    font-size:34px;
+}
+main{
+
+}
+.content{
+    font-size: 18px;
+}
+.content .spinner{
+    margin:20px auto;
+    display: block;
+    position: relative;
+  /*   right: 160px; */
+    display:none;
+}
+.qvobject {
+    height: 700px;
+}
+.button-column{
+}
+#prompt_submit{
+    width:200px;
+}
+
+@media screen and (max-width:768px) {
+    header .logo img{
+        max-width: 50px;
+        margin:10px 5px;
+    }
+    header .title h1{
+        font-size:18px;
+    }
+    .content .spinner{
+        position: static;
+    }
+}
